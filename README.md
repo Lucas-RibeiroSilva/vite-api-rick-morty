@@ -1,0 +1,1 @@
+# vite-api-rick-morty
