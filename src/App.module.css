@@ -1,0 +1,52 @@
+main{
+    background-color: #272727;
+}
+
+.logo{
+    width: 20%;
+    animation: fromTop 700ms ease-in-out;
+}
+
+.wrapCards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.inputs{
+    display: flex;
+    gap: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    background-color: rgb(20, 20, 20);
+    opacity: 70%;
+    color: white;
+    border-radius: 8px;
+}
+
+input::placeholder{
+    opacity: 100%;
+    color: white;
+}
+
+@keyframes fromTop {
+    0%{
+    transform: translateY(-100px);
+    }100%{
+    transform: translateY(0);
+    }
+}
+
+@media (width <= 1000px){
+    .logo{
+        width: 50%;
+    }
+    .inputs{
+        flex-direction: column;
+    }
+}
